@@ -1,0 +1,15 @@
+a:link,a:visited{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
