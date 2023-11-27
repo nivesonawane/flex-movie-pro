@@ -75,6 +75,19 @@ body{
     color: var(--color-pri);
 }
 
+/* post section css*/
+
+.content-area{
+    flex-direction: column;
+}
+
+.main-content-area{
+    border: 2px solid red;
+}
+
+.sidebar-section{
+    border: 2px solid green;
+}
 
 
 
@@ -91,5 +104,14 @@ body{
     }
     .navbar li{
         flex-grow: 1;
+    }
+    .content-area{
+        flex-direction: row;
+    }
+    .main-content-area{
+        flex: 1 0 0;  /* flex grow,shrink,basis */
+    }
+    .sidebar-section{
+        flex: 0 0 400px;
     }
 }
