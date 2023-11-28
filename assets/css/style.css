@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-
-:root{
-    --color-pri: #f6d200;
-    --color-grey: #ededed;
-    --color-dark: #000;
-    --color-white: #fff;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 
 body{
@@ -116,6 +108,44 @@ body{
     padding: 25px;
 }
 
+/* watch card section css */
+.watch-card{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.watch-img > img{
+    width: 100%;
+}
+
+.watch-content{
+   padding: 20px;
+   font-weight: bold;
+}
+
+.watch-content h3{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.watch-content h3,
+.watch-content p{
+    margin-bottom: 15px;
+}
+
+.watch-content a{
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.watch-content p span{
+    margin-right: 10px;
+    font-size: 22px;
+}
 
 @media all and (min-width: 768px){
     .posts{
@@ -124,6 +154,23 @@ body{
     }
     .posts .post{
         width: 49%;
+    }
+    .watch-card{
+        flex-direction: row;
+    }
+    .watch-img{
+        flex: 0 0 400px;
+    }
+    .watch-img > img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .watch-content{
+        align-self: center;
+        padding: 30px;
+    }
+    .watch-card:nth-of-type(2) .watch-img{
+       order: 1;
     }
 }
 

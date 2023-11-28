@@ -1,3 +1,11 @@
+
+:root{
+    --color-pri: #f6d200;
+    --color-grey: #ededed;
+    --color-dark: #000;
+    --color-white: #fff;
+}
+
 a:link,a:visited{
     text-decoration: none;
 }
@@ -12,4 +20,12 @@ ul{
 
 .flex-direction-column{
     flex-direction: column;
+}
+
+.section-heading{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-dark);
 }
