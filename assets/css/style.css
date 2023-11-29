@@ -233,6 +233,30 @@ body{
     object-fit: cover;
 }
 
+/* ############## sidebar section css start ############# */
+.wedget{
+    padding: 10px;
+}
+.wedget-card{
+    background-color: var(--color-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.wedget-card a:link,
+.wedget-card a:visited{
+    color: var(--color-dark);
+    padding-left: 10px;
+    font-weight: 700;
+}
+.wedget-card h3{
+    margin-top: 12px;
+}
+.wedget-card li{
+    margin-bottom: 5px;
+}
+
 /* ############ FOOTER section css start ############### */
 .footer{
     background-color: var(--color-dark);
@@ -302,6 +326,9 @@ body{
 
 
 @media all and (min-width: 1180px){
+    .main-content-area,.wedget{
+        padding: 20px;
+    }
     .navbar ul{
         display: flex;
     }
