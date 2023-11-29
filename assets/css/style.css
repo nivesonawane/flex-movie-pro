@@ -210,6 +210,27 @@ body{
     justify-content: center;
     align-items: center; */
 }
+
+/* ################## gallary section css start ###################### */
+.gallary-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallary-img{
+    height: 350px;
+    flex-grow: 1;
+    margin: 0 0 10px 10px;
+}
+.gallary-img a{
+    display: block;
+    height: 100%;
+}
+.gallary-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media all and (min-width: 768px){
     .posts{
         flex-direction: row;
@@ -244,6 +265,23 @@ body{
     }
     .download-link,.download-rating{
         flex: 0 0 200px;
+    }
+    /* gallary-img 1 5 9 >> 250px */
+    /* gallary-img 2 6 10 >> 325px */
+    /* gallary-img 3 7 >> 180px */
+    /* gallary-img 4 8 >> 420px */
+    
+    .gallary-img:nth-child(4n + 1){
+        flex-basis: 250px;
+    }
+    .gallary-img:nth-child(4n + 2){
+        flex-basis: 325px;
+    }
+    .gallary-img:nth-child(4n + 3){
+        flex-basis: 180px;
+    }
+    .gallary-img:nth-child(4n + 4){
+        flex-basis: 420px;
     }
 }
 
