@@ -78,6 +78,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+    
 }
 
 .post{
@@ -215,6 +216,7 @@ body{
 .gallary-imgs{
     display: flex;
     flex-wrap: wrap;
+    /* margin-left: -10px; */
 }
 .gallary-img{
     height: 350px;
@@ -231,6 +233,15 @@ body{
     object-fit: cover;
 }
 
+/* ############ FOOTER section css start ############### */
+.footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
 @media all and (min-width: 768px){
     .posts{
         flex-direction: row;
@@ -241,6 +252,7 @@ body{
     }
     .watch-card{
         flex-direction: row;
+        margin-left: 10px;
     }
     .watch-img{
         flex: 0 0 400px;
@@ -255,6 +267,9 @@ body{
     }
     .watch-card:nth-of-type(2) .watch-img{
        order: 1;
+    }
+    .download-card{
+        margin-left: 10px;
     }
     .download-content{
         flex-direction: row;
